@@ -16,8 +16,8 @@ float humidity_value;
 
 
 // set up the 'temperature' and 'humidity' feeds
-AdafruitIO_Feed *temperature2 = io.feed("bme280-temp");
-AdafruitIO_Feed *humidity2 = io.feed("bme280-humidity");
+AdafruitIO_Feed *temperature2 = io.feed("flat.flat-living-temperature");
+AdafruitIO_Feed *humidity2 = io.feed("flat.flat-living-humidity");
 
 float counter;
 float pause;
