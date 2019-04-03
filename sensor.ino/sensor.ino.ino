@@ -25,7 +25,7 @@ float pause;
 
 void setup() {
 
-
+//
 counter = 0;
 //pause for x seconds between posting values
 pause = 300;
@@ -48,7 +48,10 @@ while (!Serial){}
 
   // we are connected
   Serial.println();
-  Serial.println(io.statusText());
+  
+    Serial.println("WiFi connected");
+  Serial.print("IP address: "); Serial.println(WiFi.localIP());
+Serial.println(io.statusText());
 
 
 
@@ -57,6 +60,8 @@ if (bme.begin()<0) {
   Serial.println ("error communication with sensor!");
   while(1) {}
 }
+
+
 
 }
 
